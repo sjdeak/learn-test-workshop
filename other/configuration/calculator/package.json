@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
     "dev": "webpack-dev-server --mode=development",
     "build": "webpack --mode=production",
     "start": "serve --port 8080"
@@ -21,6 +24,8 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^1.0.0",
     "file-loader": "^1.1.11",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "latest",
     "serve": "^9.4.0",
     "style-loader": "^0.21.0",
     "webpack": "^4.16.2",
@@ -35,5 +40,8 @@
   },
   "babel": {
     "presets": "./.babelrc.js"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
   }
 }
