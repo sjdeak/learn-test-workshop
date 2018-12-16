@@ -14,7 +14,7 @@ test('calls onSubmit with the username and password when submitted', () => {
 
   // Act
   usernameNode.value = fakeUser.username
-  passwordNode.value = fakeUser.password
+  passwordNode.value = fakeUser.password´
   getByText(/submit/i).click()
 
   // Assert
